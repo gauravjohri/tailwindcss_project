@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="lg:container lg:mx-auto bg-blue-800 mx-auto p-5 h-auto">
+        <h2 class="text-2xl text-center">Conatiner</h2>
+        <!-- Flex Layout -->
+        <div class="flex flex-wrap gap-x-8">
+            <div class="w-40 h-40 bg-green-500">Flex 1</div>
+            <div class="w-40 h-40 bg-yellow-500">Flex 2</div>
+            <div class="w-40 h-40 bg-purple-500">Flex 3</div>
+        </div>
+        <!-- Grid Layout -->
+        <div class="py-2 grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-3">
+            <div class="font-sans w-full bg-yellow-500 h-40 text-center text-xl">Grid 1
+                <button class="btn btn-green shadow-black-500">Save</button>
+            </div>
+            <div class="font-sans w-full bg-yellow-500 h-40 text-center text-xl">Grid 1</div>
+            <div class="font-sans w-full bg-yellow-500 h-40 text-center text-xl">Grid 1
+            </div>
+
+            <!--  -->
+        </div>
+
+        <form>
+            <label class="block">
+                <span class="block text-sm font-medium text-slate-700">Username</span>
+                <!-- Using form state modifers, the classes can be identical for every input -->
+                <input type="text" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                invalid:border-pink-500 invalid:text-pink-600
+                focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+              " />
+            </label>
+            <!-- ... -->
+        </form>
+</body>
+
+</html>
